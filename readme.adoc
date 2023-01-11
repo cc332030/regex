@@ -1,0 +1,21 @@
+
+= regex
+
+== 例子
+
+=== 匹配开头结尾中间的内容
+
+[source,regexp]
+----
+(?<=ResponseEnum\.).*?(?=.code)
+----
+
+image::image-2023-01-11-17-09-30-912.webp[]
+
+=== 匹配以固定开头，中间随机的结尾
+[source,regexp]
+----
+(?<=ResponseEnum\.[A-Z_]+\.)code
+----
+
+image::image-2023-01-11-17-08-51-040.webp[]
